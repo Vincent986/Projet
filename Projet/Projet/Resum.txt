@@ -1,0 +1,30 @@
+/* Choisir interface Xenomaï (Posix ou Native) pour la programmation du projet
+
+1) Réaliser une ou plusieurs tâches temps réel dans l'environnement Linux/Xenomaï.
+Objectif de la tâche ? faire des prélèvements sur l'horloge du système à une fréquence élevée
+Contraintes : précision de la donnée prélevée / Durée finie de prélèvement
+Déterminer la fréquence optimale qui permettra de faire le travail sans erreur (sans overrun !).testacq.c (cf l’archive TestacquisXeno_v3.tar.gz)
+
+ Faire des acquisitions de données -> récuperer le temps à intervalle régulier.
+Que récupère la tâche d'acquisition ? récupérer quand on en a besoin et sans perturber l’acquisition, les données acquises
+
+En vous inspirant de l'exemple fournit (acquis.c)qui montre un échange basé sur l'utilisation astucieuse d'un double buffer, mettre au point un algorithme de type producteurs/consommateurs permettant l'échange entre une tâche temps-réel et une tâche non temps-réel. D’autres solutions, avec ou sans sémaphore, sont aussi possibles.
+
+3) Transmettre les valeurs à une application non-temps réel. 
+Sauvegarder les données acquises dans un fichier.
+
+4) Réaliser une (ou plusieurs) tâche(s) non temps-réel pour envoyer les données de l'acquisition à un
+PC depuis l'application vers un PC. Choisir un protocole de base
+(UDP ou TCP) et définir votre propre protocole pour assurer le transfert des données entre la RPi et
+le PC. L’expliquer en détail dans le rapport à rendre 
+
+5) Sur le pc, afficher la courbe des valeurs acquises (GNUPlot) 
+la courbe obtenue par l'ensemble des points (Ni,sin(Vi) ), Ni étant le numéro de l'acquisition et Vi le réel obtenu lors de cette acquisition, doit être une belle sinusoïde.
+Contraintes : bien cadrer la fenêtre pour pouvoir observer une période entière
+de sinusoïde
+
+
+Primary mode :
+Secondary mode : 
+
+*/

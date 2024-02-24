@@ -1,0 +1,3 @@
+#! /bin/sh
+
+gnuplot courbe.gnu -persist 2>/dev/null
